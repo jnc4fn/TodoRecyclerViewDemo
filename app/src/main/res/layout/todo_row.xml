@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Step 20: Card View is independent of the other layouts just like a decoration-->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/todoCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardBackgroundColor="#fff6a0"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+    <!-- Now go to scrolling activity -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!-- Step 17: Edit the above to make things prettier
+    Now go to todo adapter to do some more stuff (sorry school
+    just got cancelled so im not super focused anymore
+
+     This step was taken out in step 20-->
+
+    <!-- Stores the to-do date created
+        Step 7: Copy this code from Peter lol
+        Step 2 of lists is done (xml), now on to adapter step)
+        Step 8: Create an adapter package and add a todoAdapter kt class in that
+        Go to that now!-->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/cbDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="todo" />
+
+    <!-- Step 22: Make the delete button, then since you edit the XMl
+    now you have to edit the adapter ViewHolder-->
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
